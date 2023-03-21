@@ -10,6 +10,7 @@ import UIKit
 import UIKit
 
 enum Link: String {
+    case apiURL = "https://jsonplaceholder.typicode.com/users"
     case imageURL = "https://applelives.com/wp-content/uploads/2016/03/iPhone-SE-11.jpeg"
     case courseURL = "https://swiftbook.ru//wp-content/uploads/api/api_course"
     case coursesURL = "https://swiftbook.ru//wp-content/uploads/api/api_courses"
@@ -204,6 +205,24 @@ extension MainViewController {
     }
     
     private func parseData() {
-        
+        guard let url = URL(string: Link.apiURL.rawValue) else { return }
+                
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+            guard let data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            
+            do {
+                let userData = try decoder.decode(User.self, from: data)
+                print(userData)
+                self?.showAlert(withStatus: .success)
+            } catch let error {
+                print(error)
+                self?.showAlert(withStatus: .failed)
+            }
+        }.resume()
     }
 }

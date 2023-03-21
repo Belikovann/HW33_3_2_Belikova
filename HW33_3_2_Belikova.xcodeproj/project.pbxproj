@@ -14,11 +14,11 @@
 		C83D2E5629CA1D0E0037D09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83D2E5529CA1D0E0037D09C /* Assets.xcassets */; };
 		C83D2E5929CA1D0E0037D09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D2E5729CA1D0E0037D09C /* LaunchScreen.storyboard */; };
 		C83D2E6529CA1D6A0037D09C /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */; };
-		C83D2E6729CA1E4D0037D09C /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */; };
 		C83D2E6929CA43740037D09C /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6829CA43740037D09C /* CoursesViewController.swift */; };
 		C83D2E6B29CA440C0037D09C /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6A29CA440C0037D09C /* Courses.swift */; };
 		C83D2E6E29CA44CD0037D09C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6D29CA44CD0037D09C /* CourseCell.swift */; };
 		C83D2E7129CA44EB0037D09C /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E7029CA44EB0037D09C /* UserActionCell.swift */; };
+		C83D2E7729CA58BD0037D09C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E7629CA58BD0037D09C /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +31,11 @@
 		C83D2E5829CA1D0E0037D09C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83D2E5A29CA1D0E0037D09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
-		C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		C83D2E6829CA43740037D09C /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		C83D2E6A29CA440C0037D09C /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 		C83D2E6D29CA44CD0037D09C /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		C83D2E7029CA44EB0037D09C /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		C83D2E7629CA58BD0037D09C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 			children = (
 				C83D2E5029CA1D0C0037D09C /* ViewController.swift */,
 				C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */,
-				C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */,
 				C83D2E6829CA43740037D09C /* CoursesViewController.swift */,
 			);
 			path = VIewControllers;
@@ -112,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C83D2E6A29CA440C0037D09C /* Courses.swift */,
+				C83D2E7629CA58BD0037D09C /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,9 +197,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83D2E5129CA1D0C0037D09C /* ViewController.swift in Sources */,
+				C83D2E7729CA58BD0037D09C /* Users.swift in Sources */,
 				C83D2E6529CA1D6A0037D09C /* MainCollectionViewController.swift in Sources */,
 				C83D2E6B29CA440C0037D09C /* Courses.swift in Sources */,
-				C83D2E6729CA1E4D0037D09C /* MainCollectionViewCell.swift in Sources */,
 				C83D2E6E29CA44CD0037D09C /* CourseCell.swift in Sources */,
 				C83D2E4D29CA1D0C0037D09C /* AppDelegate.swift in Sources */,
 				C83D2E4F29CA1D0C0037D09C /* SceneDelegate.swift in Sources */,
