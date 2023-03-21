@@ -15,6 +15,10 @@
 		C83D2E5929CA1D0E0037D09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D2E5729CA1D0E0037D09C /* LaunchScreen.storyboard */; };
 		C83D2E6529CA1D6A0037D09C /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */; };
 		C83D2E6729CA1E4D0037D09C /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */; };
+		C83D2E6929CA43740037D09C /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6829CA43740037D09C /* CoursesViewController.swift */; };
+		C83D2E6B29CA440C0037D09C /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6A29CA440C0037D09C /* Courses.swift */; };
+		C83D2E6E29CA44CD0037D09C /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E6D29CA44CD0037D09C /* CourseCell.swift */; };
+		C83D2E7129CA44EB0037D09C /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D2E7029CA44EB0037D09C /* UserActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		C83D2E5A29CA1D0E0037D09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		C83D2E6829CA43740037D09C /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		C83D2E6A29CA440C0037D09C /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		C83D2E6D29CA44CD0037D09C /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		C83D2E7029CA44EB0037D09C /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				C83D2E6329CA1D4E0037D09C /* Models */,
 				C83D2E6229CA1D3F0037D09C /* App */,
 				C83D2E6029CA1D230037D09C /* VIewControllers */,
+				C83D2E6C29CA44AF0037D09C /* Views */,
 				C83D2E6129CA1D300037D09C /* Storyboards */,
 				C83D2E5529CA1D0E0037D09C /* Assets.xcassets */,
 			);
@@ -75,6 +84,7 @@
 				C83D2E5029CA1D0C0037D09C /* ViewController.swift */,
 				C83D2E6429CA1D6A0037D09C /* MainCollectionViewController.swift */,
 				C83D2E6629CA1E4D0037D09C /* MainCollectionViewCell.swift */,
+				C83D2E6829CA43740037D09C /* CoursesViewController.swift */,
 			);
 			path = VIewControllers;
 			sourceTree = "<group>";
@@ -101,8 +111,18 @@
 		C83D2E6329CA1D4E0037D09C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C83D2E6A29CA440C0037D09C /* Courses.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C83D2E6C29CA44AF0037D09C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C83D2E6D29CA44CD0037D09C /* CourseCell.swift */,
+				C83D2E7029CA44EB0037D09C /* UserActionCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +198,13 @@
 			files = (
 				C83D2E5129CA1D0C0037D09C /* ViewController.swift in Sources */,
 				C83D2E6529CA1D6A0037D09C /* MainCollectionViewController.swift in Sources */,
+				C83D2E6B29CA440C0037D09C /* Courses.swift in Sources */,
 				C83D2E6729CA1E4D0037D09C /* MainCollectionViewCell.swift in Sources */,
+				C83D2E6E29CA44CD0037D09C /* CourseCell.swift in Sources */,
 				C83D2E4D29CA1D0C0037D09C /* AppDelegate.swift in Sources */,
 				C83D2E4F29CA1D0C0037D09C /* SceneDelegate.swift in Sources */,
+				C83D2E6929CA43740037D09C /* CoursesViewController.swift in Sources */,
+				C83D2E7129CA44EB0037D09C /* UserActionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW33_3_2_Belikova/Info.plist;
+				INFOPLIST_FILE = HW33_3_2_Belikova/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.HW33-3-2-Belikova";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW33_3_2_Belikova/Info.plist;
+				INFOPLIST_FILE = HW33_3_2_Belikova/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -370,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.swiftbook.HW33-3-2-Belikova";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
